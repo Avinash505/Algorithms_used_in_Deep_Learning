@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Real Estate Chatbot</title>
+</head>
+<body>
+    <h1>Real Estate Chatbot</h1>
+    <div>
+        <p>User Input: {{ user_input }}</p>
+        <p>Chatbot Response: {{ response }}</p>
+    </div>
+    <h2>Similar Properties:</h2>
+    <ul>
+        {% for property_id in similar_properties %}
+        <li>{{ property_id }}</li>
+        {% endfor %}
+    </ul>
+</body>
+</html>
